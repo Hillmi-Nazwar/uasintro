@@ -16,6 +16,12 @@ const products = [
     "productName": "Topi Banyuwangi Sunrise of Java",
     "price": 55000,
     "isAvailable": true
+  },
+  {
+    "sku": "CAP-003",
+    "productName": "Celana curduroi",
+    "price": 1000000,
+    "isAvailable": true
   }
 ];
 
