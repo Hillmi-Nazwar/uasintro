@@ -1,16 +1,24 @@
 {
-  "name": "banyuwangi_marketplace",
+  "name": "intro",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "vendora.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikiti87/uasintro.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mikiti87/uasintro/issues"
+  },
+  "homepage": "https://github.com/mikiti87/uasintro#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1"
   }
 }
