@@ -1,0 +1,61 @@
+
+const express = require('express');
+const app = express();
+const PORT = 3003;
+
+// Sample Vendor C data
+const getVendorCData = () => {
+  return [
+    {
+      "id": "501",
+      "details": {
+        "name": "Nasi Tempong",
+        "category": "Food"
+      },
+      "pricing": {
+        "base_price": 20000,
+        "tax": 2000
+      },
+      "stock": 50
+    },
+    {
+      "id": "502",
+      "details": {
+        "name": "Soto Ayam Banyuwangi",
+        "category": "Food"
+      },
+      "pricing": {
+        "base_price": 18000,
+        "tax": 1800
+      },
+      "stock": 30
+    },
+    {
+      "id": "503",
+      "details": {
+        "name": "Kue Tradisional",
+        "category": "Snack"
+      },
+      "pricing": {
+        "base_price": 10000,
+        "tax": 1000
+      },
+      "stock": 100
+    }
+  ];
+};
+
+// Health check endpoint
+app.get('/status', (req, res) => {
+  res.json({ status: 'Vendor C running' });
+});
+
+// Menu endpoint (returns raw data)
+app.get('/menu', (req, res) => {
+  res.json(getVendorCData());
+});
+
+// Start server
+app.listen(PORT, () => {
+  console.log(`Vendor C running at http://localhost:${PORT}/menu`);
+});
