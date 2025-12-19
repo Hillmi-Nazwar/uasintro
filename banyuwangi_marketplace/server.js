@@ -26,26 +26,26 @@ function loadVendorData(filename) {
 
 // Fungsi integrasi 3 vendor
 function integrateData() {
-  const vendorA = loadVendorData('vendorA.json');
-  const vendorB = loadVendorData('vendorB.json');
-  const vendorC = loadVendorData('vendorC.json');
+  const vendorA = loadVendorData('Data/vendorA.json');
+  const vendorB = loadVendorData('Data/vendorB.json');
+  const vendorC = loadVendorData('Data/vendorC.json');
 
   const result = [];
 
 // tambahkan di bawah fungsi loadVendorData dan sebelum app.listen
 
 app.get('/debug/vendor-a', (req, res) => {
-  const data = loadVendorData('vendorA.json');
+  const data = loadVendorData('Data/vendorA.json');
   res.json(data);
 });
 
 app.get('/debug/vendor-b', (req, res) => {
-  const data = loadVendorData('vendorB.json');
+  const data = loadVendorData('Data/vendorB.json');
   res.json(data);
 });
 
 app.get('/debug/vendor-c', (req, res) => {
-  const data = loadVendorData('vendorC.json');
+  const data = loadVendorData('Data/vendorC.json');
   res.json(data);
 });
 
