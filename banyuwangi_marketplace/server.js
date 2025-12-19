@@ -39,7 +39,7 @@ app.get('/debug/vendor-c', (req, res) => {
   res.json(data);
 });
 
-// FUNGSI INTEGRASI (FIXED 100% UAS)
+// FUNGSI INTEGRASI
 function integrateData() {
   const vendorA = loadVendorData('Data/vendorA.json');
   const vendorB = loadVendorData('Data/vendorB.json');
